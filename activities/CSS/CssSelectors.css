@@ -1,0 +1,19 @@
+body{
+    font-family:Arial, Helvetica, sans-serifS}
+#first{
+
+    color:blue;
+
+}
+.second{
+
+    color:green;
+    color:rgb(0, 0, 0)
+
+}
+.bigger{
+    font-size: 24pt;
+}
+main .bigger{
+    font-family:Jokerman;
+}
