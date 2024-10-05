@@ -1,0 +1,23 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image:url(Flowers.jpeg) ;
+}
+nav{
+    font: 1em sans-serif;
+
+    color: aliceblue;
+
+}
+main{
+    color: aliceblue;
+}
+.current{
+    color:black;
+
+}
+.list{
+    list-style-image: url('CheckMark.png');
+}
+header{
+    background: url('CheckMark.png') top right no-repeat;
+}
