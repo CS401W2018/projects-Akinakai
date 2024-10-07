@@ -1,0 +1,31 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background-image: url(MountFiji.jpeg);
+}
+header{
+   
+}
+nav{
+    font: 1em sans-serif;
+
+    color: aliceblue;
+
+}
+main{
+    color: grey;
+}
+.current{
+    color:black;
+
+}
+header {
+    color: rgb(0, 0, 0);
+
+}
+.kite{
+    background: url(JapanSymbol.jpeg) top right no-repeat
+}
+.list{
+    list-style-image: url(favicon.ico)
+}
