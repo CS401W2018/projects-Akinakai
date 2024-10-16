@@ -1,0 +1,12 @@
+.container{
+    color: aqua;
+    padding: 5px;
+    display: 5px;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.item{
+    color: aquamarine;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
