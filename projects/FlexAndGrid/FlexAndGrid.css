@@ -1,0 +1,52 @@
+
+header{
+    display: block;
+    block-size: 75px;
+    background-color: darkgrey;
+}
+nav div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: bisque;
+    padding: 10px;
+
+}
+nav{
+    background-color: bisque;
+    padding: 10px;
+}
+.heat{
+    width: 313px;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    border: 2px solid #888;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+}
+Main{
+    display:flex;
+}
+Main div{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.side{
+    display:flex;
+}
+body{
+    background-color:darkolivegreen;
+}
+footer div{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+footer a{
+    display: block 5px;
+    padding: 5px;
+
+}
