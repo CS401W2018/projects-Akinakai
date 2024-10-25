@@ -18,6 +18,28 @@ header h1{
 }
 .row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between ;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: #AAA;
+
+    }
+    .row{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    nav a{
+        border-bottom: thin solid #fff;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .mainCard{order: -1;
+
+    }
+
+    
 }
