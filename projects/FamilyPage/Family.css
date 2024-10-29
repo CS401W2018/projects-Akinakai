@@ -11,11 +11,9 @@ div nav{
     display: block;
     justify-content: space-between;
 }
-nav{
-    display: flex;
-}
+
 .card-container{
-    width: 70%;
+    width: 100%;
     display: flex ;
 
 }
@@ -36,7 +34,7 @@ nav{
     display: flex;
 }
 aside{
-    width:
+    width:100%;
     
 }
 aside img{
@@ -47,6 +45,12 @@ aside img{
         background-color: #AAA;
 
     }
+    .clear{
+        flex-direction: column;
+
+    }
+
+
     .card-container{
         flex-wrap: wrap;
         flex-direction: column;
@@ -62,10 +66,12 @@ aside img{
     }
     .first {
         width: 100%;
-        position:absolute
+        position:relative
     }
     .second{
         width: 100%;
-        position: relative;
+        position: absolute;
+        display:flex ;
+        flex-wrap: wrap;
     }
 }
