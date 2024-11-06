@@ -6,6 +6,7 @@ body{
     border: thin solid black;
     border-spacing: 0;
     border-collapse: collapse;
+    caption-side: bottom;
 
 }
 .schedule td, .schedule th{
@@ -24,4 +25,10 @@ body{
 }
 .schedule tfoot{
     background-color: aqua;
+}
+
+aside div{
+    width: 25%;
+    display: flex;
+    flex-direction: column-reverse;
 }
