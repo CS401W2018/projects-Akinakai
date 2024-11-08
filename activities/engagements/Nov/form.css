@@ -1,3 +1,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+fieldset{
+    box-shadow: 3px,3px,3px rgba(20, 20, 20, .5);
+}
+legend {
+    border: thin solid #000;
+    background-color: blue;
+    padding: 10px;
+    color: aliceblue;
+}
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.form-row label{
+    width: 37%;
+    text-align: right;
+}
+.check-row{
+    
+}
