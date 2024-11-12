@@ -12,10 +12,31 @@
     </header>
     <main>
         <form action="processing.html" method="post">
-            first name :<input type="text" name"first"><br>
-            Last name :<input type="text" name"last"><br>
-            password: <input type="password" name="pass"><br>
-            <input type="submit">
+           
+            <div>
+                <option value="HI">Hawaii</option>
+                <option value="UT">Utah</option>
+            </div>
+            <fieldset>
+                <legend>Sign UP</legend>
+                <div class="form-row">
+                    <label for="fname"> First name </label>
+                    <input id="fname" name="fname" type="text" placeholder="first name">
+                </div>
+                <div class="form-row">
+                    <label for="lname"> Last name </label>
+                    <input id="lname" name="lname" type="text" placeholder="last name">
+                </div>
+                <div class="form-row">
+                    <label for="pass"> password </label>
+                    <input id="pass" name="pass" type="password" placeholder="password">
+                </div>
+            </fieldset>
+            <div class="form-row">
+                class:
+                <label><input name="class" type="radio" value="freshman">Freshman </label>
+                <label><input name="class" type="radio" value="sophamore">sophamore </label>
+            </div>
         </form>
         <form action="">
             <input type="radio" name="grade" value="freshman"> freshman <br>
@@ -27,7 +48,17 @@
 
         <p>The form tag has an "action" attribute. What does it do? the action is the sending info to the specific address. 
             The form tag has a "method" attribute. What does it do? it is the prodacall it is the rule is getting info. that is what the method does
-            What is the difference between a "POST" and a "GET"? I want to read something off the server. it is getting info. </p>
+            What is the difference between a "POST" and a "GET"? I want to read something off the server. it is getting info. 
+        </p>
+        <p>
+            What are different ways to style your form?
+            forms legends labels, many different wayss  to do it. check boxes all the good stuff
+
+
+            Why does the professor like to use flex?
+            it make is all neat when trying to aline things.
+
+        </p>
 
 
     </main>
