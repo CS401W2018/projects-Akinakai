@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Forms.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+            <fieldset>
+                <legend>Form</legend>
+                <Form action="processing.php" method="post">
+                    <div class="form-row">
+                        <label for="FirstnameInput"> First name </label>
+                        <input type="text" name="Firstname" id="FirstNameInput" placeholder="First Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="emailInput">Email:</label>
+                        <input type="email" name="email" id="emailInput">
+                    </div>
+                    <div class="form-row">
+                        <label for="dateInput">Birthdate:</label>
+                        <input type="date" name="birthdate" id="dateInput">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer">Gender:</div>
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female" checkedsel>Female</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <label><input type="checkbox" name="agree" value="Male" checked>I agree to terms.</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="state">State:</label>
+                        <select name="state" id="password">
+                            <option value="ca">California</option>
+                            <option value="hi" selected>Hawaii</option>
+                            <option value="ut">Utah</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <label><input type="checkbox" name="agree" value="male" checked>I agree to the terms.</label>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="comment">Comment:</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <input type="submit" value="Sign Up!">
+                    </div>
+                </form>
+            </fieldset>
+    </main>
+    <footer> 
+        &copy;Isaac Akinaka 2024
+    </footer>
+</body>
+</html>
