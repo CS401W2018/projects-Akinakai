@@ -11,7 +11,7 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
            
             <div>
                 <option value="HI">Hawaii</option>
@@ -31,34 +31,40 @@
                     <label for="pass"> password </label>
                     <input id="pass" name="pass" type="password" placeholder="password">
                 </div>
+                <div class="form-row">
+                    class:
+                    <label><input name="class" type="radio" value="freshman">Freshman </label>
+                    <label><input name="class" type="radio" value="sophamore">sophamore </label>
+                </div>
+            </form>
+            <form action="">
+                <input type="radio" name="grade" value="freshman"> freshman <br>
+                <input type="radio" name="grade" value="sophamore"> sophamore <br>
+                <input type="radio" name="grade" value="junior"> junior <br>
+                <input type="radio" name="grade" value="senior"> senior <br>
+                <select name="stats" id="stats"></select>
+            </form>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up!">
+                </div>
             </fieldset>
-            <div class="form-row">
-                class:
-                <label><input name="class" type="radio" value="freshman">Freshman </label>
-                <label><input name="class" type="radio" value="sophamore">sophamore </label>
-            </div>
-        </form>
-        <form action="">
-            <input type="radio" name="grade" value="freshman"> freshman <br>
-            <input type="radio" name="grade" value="sophamore"> sophamore <br>
-            <input type="radio" name="grade" value="junior"> junior <br>
-            <input type="radio" name="grade" value="senior"> senior <br>
-            <select name="stats" id="stats"></select>
-        </form>
-
-        <p>The form tag has an "action" attribute. What does it do? the action is the sending info to the specific address. 
-            The form tag has a "method" attribute. What does it do? it is the prodacall it is the rule is getting info. that is what the method does
-            What is the difference between a "POST" and a "GET"? I want to read something off the server. it is getting info. 
-        </p>
-        <p>
-            What are different ways to style your form?
-            forms legends labels, many different wayss  to do it. check boxes all the good stuff
 
 
-            Why does the professor like to use flex?
-            it make is all neat when trying to aline things.
+        <p>What is JavaScript? How did it get its name?
+            JavaScript, is a coding language that allows us to communicate to computer. but Microsoft created JavaScript for front-end
+
+            What are the two ways you can run JavaScript?
+            only run inside a browers(the dom) at first, Now there is something called Node.js 
+
+            What was the most popular front-end js library?
+            Jquory
+
+            What is the most popular front-end js library today?
+            react is Now the biggest
 
         </p>
+
 
 
     </main>
@@ -66,5 +72,27 @@
         &copy;2024 Isaac Akinaka
 
     </footer>
+    <script>
+        document.getElementById(myForm).addEventListener('submit', function(event){
+            event.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            console.log(firstName);
+            const lastName = document.getElementById('lastName').value;
+            console.log(lastName);
+            const age = document.getElementById ('age').value;
+            alert("You submitted the form!")
+                console.log(formData);
+                alert("you submitted the form")
+        if (!firstName || !lastName){
+            alert("First name and Last name required!")
+            return;
+
+        }
+        if (!age || age <18) {
+            alert(" You must be 18 years of age to continue")
+            return;
+        }
+        })
+    </script>
 </body>
 </html>
