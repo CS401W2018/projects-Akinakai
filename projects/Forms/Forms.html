@@ -21,10 +21,19 @@
     <main>
             <fieldset>
                 <legend>Form</legend>
-                <Form action="processing.php" method="post">
+                <Form action="processing.html" method="post">
                     <div class="form-row">
                         <label for="FirstnameInput"> First name </label>
                         <input type="text" name="Firstname" id="FirstNameInput" placeholder="First Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="LastNameInput">Last name</label>
+                        <input type="text" name="LastNameInput" id="LastNameInput" placeholder="Last Name">
+
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age" placeholder="age" >
                     </div>
                     <div class="form-row">
                         <label for="emailInput">Email:</label>
@@ -75,5 +84,28 @@
     <footer> 
         &copy;Isaac Akinaka 2024
     </footer>
+    <script>
+        document.getElementById(myForm).addEventListener('submit', function(event){
+            event.preventDefault();
+            const FirstNameInput = document.getElementById('FirstNameInput').value;
+            console.log(FirstNameInput);
+            LastNameInput = document.getElementById('LastNameInput').value;
+            console.log(LastNameInput);
+            const age = document.getElementById ('age').value;
+            alert("You submitted the form!")
+                console.log(formData);
+                alert("you submitted the form")
+        if (!FirstNameInput || !LastNameInput){
+            alert("First name and Last name required!")
+            return;
+
+        }
+        if (!age || age <18) {
+            alert(" You must be 18 years of age to continue")
+            return;
+        }
+
+        })
+    </script>
 </body>
 </html>
