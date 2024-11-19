@@ -85,26 +85,41 @@
         &copy;Isaac Akinaka 2024
     </footer>
     <script>
-        document.getElementById("myForm").addEventListener('submit', function(event){
+        document.getElementById("myForm").addEventListener("submit", function(event) {
             event.preventDefault();
-            const FirstNameInput = document.getElementById('FirstNameInput').value;
-            console.log(FirstNameInput);
-            LastNameInput = document.getElementById('LastNameInput').value;
-            console.log(LastNameInput);
+            
+            const First = document.getElementById('FirstNameInput').value;
             const age = document.getElementById ('age').value;
-            alert("You submitted the form!")
-                console.log(formData);
-                alert("you submitted the form")
-        if (!FirstNameInput || !LastNameInput){
-            alert("First name and Last name required!")
-            return;
-        }
-        if (!age || age <18) {
-            alert(" You must be 18 years of age to continue")
-            return;
-        }
+            const Last = document.getElementById("LastNameInput").value
+        
+            if (!FirstNameInput || !LastNameInput){
+                alert("First name and Last name required!")
+                return;
+            }
+            if (!age || age <18) {
+                alert(" You must be 18 years of age to continue")
+                return;
+            }
+            const data = {
+                FirstNameInput: First,
+                LastNameInput: Last,
+                age: age
+            }
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "submit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charsset=UTF-8");
+            xhr.onreadystatechange = function (){
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert ('Form submitted successfully.');
 
-        })
+                }else if (xhr.readyState === 4){
+                    alert('Error submitting form.')
+                }
+            };
+            xhr.send (JSON.stringify(data));
+            console.log(data);
+
+        });
     </script>
 </body>
 </html>
