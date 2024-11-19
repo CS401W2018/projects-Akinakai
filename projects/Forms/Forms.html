@@ -85,7 +85,7 @@
         &copy;Isaac Akinaka 2024
     </footer>
     <script>
-        document.getElementById(myForm).addEventListener('submit', function(event){
+        document.getElementById("myForm").addEventListener('submit', function(event){
             event.preventDefault();
             const FirstNameInput = document.getElementById('FirstNameInput').value;
             console.log(FirstNameInput);
@@ -98,7 +98,6 @@
         if (!FirstNameInput || !LastNameInput){
             alert("First name and Last name required!")
             return;
-
         }
         if (!age || age <18) {
             alert(" You must be 18 years of age to continue")
