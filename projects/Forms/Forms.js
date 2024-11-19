@@ -34,6 +34,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
                 const response = JSON.parse(xhr.responseText);
                 document.getElementById("message").innerHTML = response.message;
                 document.getElementById("myForm").innerHTML = "";
+                alert('Submitted!')
             } else {
                 alert('Error submitting form.');
             }
