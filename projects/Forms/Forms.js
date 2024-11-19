@@ -33,9 +33,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);
                 document.getElementById("message").innerHTML = response.message;
-                document.getElementById("myForm").innerHTML = "";
-                alert('Submitted!')
+                document.getElementById("myForm").reset();  // Reset the form fields
+                alert('Submitted!');
             } else {
+                console.error("Error:", xhr.status, xhr.statusText);  // Log error for debugging
                 alert('Error submitting form.');
             }
         }
