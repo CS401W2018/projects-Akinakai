@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resistance.css">
+</head>
+<body>
+    <header>
+        Sign Up!
+    </header>
+    <main>
+        <div id="message"></div>
+        <fieldset>
+            <legend>Form</legend>
+            <form action="processing.html" method="post" id="myForm">
+                <div class="form-row">
+                    <label for="FirstNameInput"> First name </label>
+                    <input type="text" name="Firstname" id="FirstNameInput" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="LastNameInput">Last name</label>
+                    <input type="text" name="LastNameInput" id="LastNameInput" placeholder="Last Name">
+
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="age" >
+                </div>
+                <div class="form-row">
+                    <label for="emailInput">Email:</label>
+                    <input type="email" name="email" id="emailInput">
+                </div>
+                <div class="form-row">
+                    <label for="dateInput">Birthdate:</label>
+                    <input type="date" name="birthdate" id="dateInput">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+
+                </div>
+                <div class="form-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female" checkedsel>Female</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree" value="Male" checked>I agree to terms.</label>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="ca">California</option>
+                        <option value="hi" selected>Hawaii</option>
+                        <option value="ut">Utah</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Tell Me About Resistance in your Life?</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up!">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <nav>
+        <div><a href="mainPage.html">Home Page</a></div>
+        <div><a href="hawaii.html">Hawaii</a></div>
+        <div><a href="aotearoa.html">Aotearoa</a></div>
+        <div><a href="music.html">Resistance in Music</a></div>
+        <div><a href="poetry.html">Resistance in Poetry</a></div>
+    </nav>
+
+    
+</body>
+</html>
