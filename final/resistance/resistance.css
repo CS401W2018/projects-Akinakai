@@ -2,19 +2,60 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: blanchedalmond;
 }
-nav div{
-    display: flex;
-    padding: 0%;
+
+header h1{
+    padding: 10px;
+    margin: 5%;
 }
+
+nav{
+    display: flex;
+    flex-direction: row;    
+    padding: 10px;
+    margin: 5%;    
+}
+
+nav div{
+    padding: 3px;
+    margin: 5%;
+    color: black;
+}
+
 .MainMain{
     display: flex;
     padding: auto;
     border: 3px color(255 255 255 255);
     box-shadow: 3px;
+}
 
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 3px;
+    box-shadow: 3px thin black;
+    border: black solid thick;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow:thin black;
+    border: black solid thick;
+}
+.card iframe{
+    width: 500px;
 }
 .MainHawaii{
     display: flex;
+}
+.hawaiiDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+
 }
 .MainAotearoa{
     display: flex;
@@ -22,3 +63,25 @@ nav div{
 .MainData{
 
 }
+.HeaderIMG{
+    height: 10%;
+    width: 100%;
+}
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
