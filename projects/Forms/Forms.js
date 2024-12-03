@@ -24,12 +24,12 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
     // Create XHR object
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "submit.json", true);
+    xhr.open("GET", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
 
     // Handle response
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);
