@@ -1,0 +1,44 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    background-color: brown;
+    padding: 0%;
+}
+nav{
+    padding: 0%;
+    background-color: antiquewhite;
+}
+main{
+    display: flex;
+}
+.schedule{
+    margin: 5px auto;
+    border: thin solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    caption-side: bottom;
+
+}
+.schedule td, .schedule th{
+    border: thin solid black;
+    padding: 5px;
+
+}
+.schedule thead{
+    background-color: rgb(7, 7, 7);
+    color: aliceblue;
+
+}
+.schedule tbody tr:nth-child(odd){
+    background-color: brown;
+}
+.schedule tfoot{
+    background-color: brown;
+}
+.side{
+    order: 2;
+}
+.container{
+    display: flex;
+}
