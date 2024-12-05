@@ -10,6 +10,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         alert("First name and Last name required!");
         return;
     }
+    if (!age || age < 18) {
+        alert("You must be 18 years of age to continue");
+        return;
+    }
 
     // Data to send
     const data = {
