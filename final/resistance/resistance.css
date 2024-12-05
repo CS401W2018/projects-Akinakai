@@ -50,12 +50,6 @@ aside{
 .MainHawaii{
     display: flex;
 }
-.hawaiiDiv{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
 .MainAotearoa{
     display: flex;
 }
@@ -79,6 +73,9 @@ a:link {
   /* selected link */
   a:active {
     color: blue;
+  }
+  .card a{
+    color: black;
   }
   @media screen and (max-width: 500px) {
     body{

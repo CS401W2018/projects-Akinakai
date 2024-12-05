@@ -27,6 +27,7 @@ main{
 }
 .side{
     order: 2;
+    width: 25%;
 }
 .container{
     display: flex;
