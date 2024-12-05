@@ -3,15 +3,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
     const First = document.getElementById('FirstNameInput').value;
     const Last = document.getElementById('LastNameInput').value;
-    const age = document.getElementById('age').value;
 
     // Validation checks
     if (!First || !Last) {
         alert("First name and Last name required!");
-        return;
-    }
-    if (!age || age < 18) {
-        alert("You must be 18 years of age to continue");
         return;
     }
 
@@ -19,7 +14,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     const data = {
         FirstName: First,
         LastName: Last,
-        age: age
     };
 
     // Create XHR object
